@@ -5,18 +5,21 @@ import backgroundImage from '../assest/images/Background.jpg';
 
 function Home(){
     
-    var homeStyling ={
-        textAlign:"center",
-        fontFamily:"lucida Console",
-        backgroundImage:`url(${backgroundImage})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        color: 'white',
-        fontWeight: 'bold'
-    };
-    var imageStyle = {
-        boxShadow: '0 0 20px 20px inset'
-    };
+  var homeStyling ={
+    textAlign:'center',
+    fontFamily:'Permanent Marker, cursive',
+    backgroundImage:`url(${backgroundImage})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    color: 'white',
+    fontWeight: 'bold'
+  };
+  var imageStyle = {
+    borderRadius: '8px', 
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+      
+        
+  };
   return(
     <div style= {homeStyling}>
       <h1> Happy Cloud Art</h1>
