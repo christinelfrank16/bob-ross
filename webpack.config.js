@@ -32,6 +32,13 @@ module.exports = {
   module: {
       rules: [
           {
+            test: /\.css$/,
+            use: [
+              'style-loader',
+              'css-loader'
+            ]
+          },
+          {
             test: /\.jsx?$/,
             enforce: "pre",
             loader: "eslint-loader",
@@ -75,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Tesla-Remake',
+      title: 'Bob Ross Happy Art',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
